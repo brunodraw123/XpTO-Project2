@@ -1,0 +1,179 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+* {
+  font-family: sans-serif;
+  background-color: aliceblue;
+}
+
+h1 {
+  color: darkorange;
+  text-shadow: 1px 1px 1px gray;
+  -webkit-text-stroke: 1px orangered;
+  font-weight: 900;
+}
+
+div.internal_component_visualization {
+  background-color: lightgoldenrodyellow;
+}
+
+h3 {
+  font-weight: 900;
+  color: brown;
+  /*  -webkit-text-stroke: 0.4px black;*/
+}
+
+div.chose_user_type {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 15px;
+}
+
+  div.chose_user_type a {
+    color: white;
+    padding: 10px;
+  }
+
+button {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px white solid;
+  box-shadow: 1px 1px 1px 1px gray;
+  font-weight: 600;
+}
+
+  button.search {
+    background-color: #ffc75096;
+    font-weight: 800;
+  }
+
+td, th {
+  height: 36px;
+}
+
+  button.user_type {
+  }
+
+  button#customer_button {
+    background-color: orange;
+  }
+
+  button#employer_button {
+    background-color: orangered;
+  }
+
+a {
+  text-decoration: none;
+}
+
+  a#a_customer {
+    background-color: orange;
+  }
+
+  a#a_employer {
+    background-color: orangered;
+  }
+
+button a :hover {
+  transition: 0.15s;
+  background-color: black;
+}
+
+div.div_table {
+  display: flex;
+  justify-content: center;
+}
+
+table.table_default {
+  background-color: lightgoldenrodyellow;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+  table.table_default td {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  table.table_default th {
+    padding: 5px;
+    background-color: orange;
+    color: brown;
+    font-weight: 800;
+    border: 2px solid gray;
+    border-radius: 5px;
+  }
+
+form {
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: auto auto;
+  width: 50%;
+  margin-top: 40px;
+  background-color: lightgoldenrodyellow;
+}
+
+  form fieldset {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    /*    background-color: darkorange;
+*/
+  }
+
+
+  form label {
+    padding: 5px;
+    margin: 2px;
+    font-weight: 600;
+    color: gray;
+    text-align: left;
+  }
+
+  form input {
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600;
+    color: gray;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+  }
+
+select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+.inputs_form_order{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  .inputs_form_order input{
+      /*width: 180px;*/
+  }
+
+  a {
+      text-decoration-style: none;
+  }
+
+  @media only screen and (max-width: 1012px) {
+    input {
+    width: 90%;
+  }
+
+}
+

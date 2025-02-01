@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\XpTO2.Server.props" />
+</Project>

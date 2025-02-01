@@ -1,0 +1,83 @@
+<div class="">
+
+  <h3>Fazer pedido <button class="search" (click)="insertNewOrder(order)" form="#form_order"> Enviar</button> </h3>
+
+  <form #form_order>
+
+    <div class="inputs_form_order">
+      <!--<div>
+        <label>Id:</label>
+        <input type="text"
+               name="orderid"
+               [(ngModel)]="order.orderId"
+               placeholder="0" readonly />
+      </div>-->
+      <div>
+        <label>Nome: </label>
+        <input name="customerName"
+               type="text"
+               [(ngModel)]="order.customerName" />
+      </div>
+      <div>
+        <label>E-mail: </label>
+        <input name="customerMail"
+               type="text"
+               [(ngModel)]="order.customerMail" />
+      </div>
+
+    </div>
+
+
+    <fieldset>
+      <label>Bebida</label>
+      <select name="drink" [(ngModel)]="order.drink.description" required>
+        <option name="optiondrink1" value="Café">
+          Café
+        </option>
+        <option name="optiondrink2" value="Refrigerante">
+          Refrigerante
+        </option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label>Acompanhamento</label>
+      <select name="accompaniment" [(ngModel)]="order.accompanimentFood.description" required>
+        <option name="optionaccompaniment1">
+          Torrada
+        </option>
+        <option name="optionaccompaniment2">
+          Salada
+        </option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label>Prato principal</label>
+      <select name="mainFood" [(ngModel)]="order.mainFood.description" required>
+        <option name="optionmainfood1">
+          Bacon
+        </option>
+        <option name="optionmainfood2">
+          Bife
+        </option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label>Sobremesa</label>
+      <select name="dessert" [(ngModel)]="order.dessert.description" required>
+        <option name="optiondessert1" value="-">
+          -
+        </option>
+        <option name="optiondessert1" value="Bolo">
+          Bolo
+        </option>
+      </select>
+    </fieldset>
+
+
+  </form>
+
+
+</div>

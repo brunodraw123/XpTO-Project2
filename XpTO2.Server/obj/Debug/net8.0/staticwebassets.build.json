@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "CK27Mmtl52KUJmd5/ntEaswxFu2wW/7ZpWAO+kmxJ9I=",
+  "Source": "XpTO2.Server",
+  "BasePath": "_content/XpTO2.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\bruno\\source\\repos\\saas_embryo\\XpTO2\\xpto2.client\\xpto2.client.esproj",
+      "Version": 2,
+      "Source": "xpto2.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

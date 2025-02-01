@@ -1,0 +1,47 @@
+<div class="">
+  <h3>Pedidos | <button class="search" (click)="getOrders()">Buscar</button></h3> 
+
+  <div class="div_table">
+    <table class="table_default">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Bebida</th>
+          <th>Acompanhamento</th>
+          <th>Prato Principal</th>
+          <th>Sobremesa</th>
+          <th>Cliente</th>
+          <th>Status</th>          
+          <!--<th>Total</th>-->
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of orders">
+        @if(item.status !== 'Finalizado'){
+
+        <tr>
+          <td>{{item.orderID}}</td>
+          <td>{{item.drink.description}}</td>
+          <td>{{item.accompanimentFood.description}}</td>
+          <td>{{item.mainFood.description}}</td>
+          <td>{{item.dessert.description}}</td>
+          <td>{{item.customerName}}</td>
+          <!--<td>{{item.totalValue}}</td>-->
+          <td>{{item.status}}</td>
+
+          <td>
+
+            <button title="Finalizar pedido"
+                    class="finalizado" (click)="updateStatusOrder(item)">
+              Finalizar
+            </button>
+          </td>
+        </tr>
+        }
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
